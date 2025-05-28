@@ -1,0 +1,135 @@
+<odoo>
+  <template id="job_page_template" name="Job Page">
+    <t t-call="website.layout">
+      <style type="text/css">
+  .my-custom-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  .my-custom-table {
+    width: max-content;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #343a40;
+    font-size: 1rem; /* Avoid huge font that breaks layout */
+    border-radius: 10px;
+    word-wrap: break-word;
+  }
+
+  .my-custom-table th {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center; 
+  padding: 0.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+  .my-custom-table td {
+  padding: 0.75rem;
+  border-bottom: 2px solid #336699;
+  word-break: break-word;
+  white-space: normal;
+  text-align: center;
+}
+
+  .my-custom-table tr:nth-child(even) {
+    background-color: #f9fbfd;
+  }
+
+  .my-custom-table th,
+  .my-custom-table td {
+    border-right: 1px solid #dee2e6; /* Light gray vertical lines */
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 1000px) {
+    .my-custom-table thead {
+      display: none;
+    }
+
+    .my-custom-table,
+    .my-custom-table tbody,
+    .my-custom-table tr,
+    .my-custom-table td {
+      display: block;
+      width: 100%;
+    }
+    
+
+    .my-custom-table tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    .my-custom-table td::before {
+      position: absolute;
+      top: 0.75rem;
+      white-space: nowrap;
+      font-weight: bold;
+      color: #003366;
+    }
+  }
+</style>
+
+        <h1 class="mb-4">Available Job Postings</h1>
+
+        <!-- Create Job Button -->
+        <div class="mb-3" style="text-align: right;">
+          <a href="/create-job" class="btn btn-primary">+ Create Job</a>
+        </div>
+
+      <div class="container mt-4">
+        <t t-set="jobs" t-value="request.env['job.postings'].sudo().search([])"/>
+
+        <div class="my-custom-table-wrapper">
+          <table class="my-custom-table">
+            <thead>
+              <tr>
+                <th>Job ID</th>
+                <th>Title</th>
+                <th>Experience</th>
+                <th>Responsibilities</th>
+                <th>Requirements</th>
+                <th>Shifts</th>
+                <th>Salary</th>
+                <th>Skills</th>
+                <th>Status</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Workplace</th>
+                <th>Posted Date</th>
+                <th>Joining Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <t t-foreach="jobs" t-as="job">
+                <tr>
+                  <td data-label="Job ID"><t t-esc="job.job_id" /></td>
+                  <td data-label="Title"><t t-esc="job.job_title" /></td>
+                  <td data-label="Experience"><t t-esc="job.experience" /></td>
+                  <td data-label="Responsibilities"><t t-esc="job.responsibilities" /></td>
+                  <td data-label="Requirements"><t t-esc="job.requirement" /></td>
+                  <td data-label="Shifts"><t t-esc="job.shift" /></td>
+                  <td data-label="Salary"><t t-esc="job.salary" /></td>
+                  <td data-label="Skills"><t t-esc="job.skills" /></td>
+                  <td data-label="Status"><t t-esc="job.status" /></td>
+                  <td data-label="Company"><t t-esc="job.company" /></td>
+                  <td data-label="Location"><t t-esc="job.location" /></td>
+                  <td data-label="Workplace"><t t-esc="job.workplace_type" /></td>
+                  <td data-label="Posted Date"><t t-esc="job.posted_date" /></td>
+                  <td data-label="Joining Date"><t t-esc="job.joining_tentative_date" /></td>
+                </tr>
+              </t>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </t>
+  </template>
+</odoo>
