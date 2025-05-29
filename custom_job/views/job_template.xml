@@ -10,6 +10,7 @@
     box-sizing: border-box;
     max-height: 400px;   /* Controls the visible height of the table */
     overflow-y: auto;
+    margin-bottom: 3rem;
   }
 
   .my-custom-table {
