@@ -4,11 +4,13 @@
       <style type="text/css">
   
   .my-custom-table-wrapper {
-  width: 100%;
-  padding-bottom: 1rem;
-  overflow-x: auto; 
-  border: 1px solid #e0e0e0;
-}
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    max-height: 400px;   /* Controls the visible height of the table */
+    overflow-y: auto;
+  }
 
   .my-custom-table {
     width: max-content;
