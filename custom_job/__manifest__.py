@@ -21,9 +21,9 @@ Features:
         'views/job_template.xml',
         'views/job_form_template.xml',# Add the view file here
     ],
-    'assets': {
+     'assets': {
         'web.assets_frontend': [
-            # Include CSS/JS files if needed
+            'custom_job_page/static/src/css/job_template.scss',
         ],
     },
     'installable': True,
