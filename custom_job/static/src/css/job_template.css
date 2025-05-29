@@ -1,11 +1,10 @@
-// ats_styles.scss
 
 .my-custom-table-wrapper {
   width: 100%;
   overflow-x: auto;
   padding-bottom: 2rem;
   box-sizing: border-box;
-  max-height: 400px;   // Controls the visible height of the table
+  max-height: 400px;  
   overflow-y: auto;
   margin-bottom: 3rem;
 }

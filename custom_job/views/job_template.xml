@@ -2,7 +2,7 @@
   <template id="job_page_template" name="Job Page">
     <t t-call="website.layout">
     <xpath expr="." position="inside">
-      <link rel="stylesheet" href="/custom_job_page/static/src/css/job_template.scss"/>
+      <link rel="stylesheet" href="custom_job/static/src/css/job_template.css" />
     </xpath>
         <h1 class="mb-4">Available Job Postings</h1>
 
