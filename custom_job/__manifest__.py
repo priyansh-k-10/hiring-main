@@ -23,7 +23,7 @@ Features:
     ],
      'assets': {
         'web.assets_frontend': [
-            'custom_job_page/static/src/css/job_template.scss',
+            'custom_job_page/static/src/css/job_template.css',
         ],
     },
     'installable': True,
