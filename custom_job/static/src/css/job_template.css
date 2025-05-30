@@ -40,10 +40,12 @@
     border-right: 1px solid #dee2e6;
   }
 
-  .Responsibilities wrapper{
-    background-color: red;
-    width : 40px;
-  }
+  td.Responsibilities {
+  max-width: 120px;  /* Adjust as needed */
+  word-break: break-word;
+  white-space: normal;
+}
+
   tr:nth-child(even) {
     background-color: #f9fbfd;
   }

@@ -7,7 +7,7 @@
         <h1 class="mb-4">Available Job Postings</h1>
 
         <!-- Create Job Button -->
-      <div class="mb-3" style="text-align: right; padding-right: 80px;">
+      <div class="mb-3" style="text-align: right; padding-right: 80px; padding-top: 20px;">
         <a href="/create-job" class="btn btn-primary">+ Create Job</a>
       </div>
 
@@ -41,7 +41,7 @@
                   <td data-label="Job ID"><t t-esc="job.job_id" /></td>
                   <td data-label="Title"><t t-esc="job.job_title" /></td>
                   <td data-label="Experience"><t t-esc="job.experience" /></td>
-                  <td data-label="Responsibilities"><t t-esc="job.responsibilities" /></td>
+                  <td data-label="Responsibilities" class="td.Responsibilities"><t t-esc="job.responsibilities" /></td>
                   <td data-label="Requirements"><t t-esc="job.requirement" /></td>
                   <td data-label="Shifts"><t t-esc="job.shift" /></td>
                   <td data-label="Salary"><t t-esc="job.salary" /></td>
