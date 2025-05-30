@@ -7,9 +7,10 @@
         <h1 class="mb-4">Available Job Postings</h1>
 
         <!-- Create Job Button -->
-        <div class="mb-3" style="text-align: right;">
-          <a href="/create-job" class="btn btn-primary" style="margin: 30px;">+ Create Job</a>
-        </div>
+      <div class="mb-3" style="text-align: right; padding-right: 30px;">
+        <a href="/create-job" class="btn btn-primary">+ Create Job</a>
+      </div>
+
 
       <div class="container mt-4">
         <t t-set="jobs" t-value="request.env['job.postings'].sudo().search([])"/>
