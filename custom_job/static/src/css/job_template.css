@@ -40,6 +40,10 @@
     border-right: 1px solid #dee2e6;
   }
 
+  .Responsibilities wrapper{
+    background-color: red;
+    width : 40px;
+  }
   tr:nth-child(even) {
     background-color: #f9fbfd;
   }
