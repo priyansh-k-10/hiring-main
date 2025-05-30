@@ -44,9 +44,6 @@
     background-color: #f9fbfd;
   }
 
-  button{
-    margin-right: 16px;
-  }
 
   @media (max-width: 1000px) {
     thead {
