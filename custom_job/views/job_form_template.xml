@@ -1,109 +1,95 @@
-
-
 <odoo>
-  <template id="job_form_template" name="Job Form" class="jobfromchanges">
+  <template id="job_form_template" name="Job Form">
     <t t-call="website.layout">
-    <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_form.css'"/>
+      <!-- Load external stylesheet -->
+      <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_form.css'" />
       <link rel="stylesheet" t-att-href="job_stylesheet"/>
-      <div class="container mb-5">
+
+      <div class="container mb-5 job-form-container">
         <h2 class="mb-4 text-center">Create a Job</h2>
-        <form id="jobForm" style="display: flex; flex-wrap: wrap; gap: 20px;">
-          <!-- Job ID -->
-          <div style="flex: 1 1 45%;">
-            <label for="job_id">Job ID <span style="color: red;">*</span></label><br/>
-            <input id="job_id" type="text" name="job_id" required="required" style="width: 100%;"/>
-          </div>
+        <form id="jobForm">
+          <!-- Basic Info -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="job_id">Job ID <span class="required">*</span></label>
+              <input id="job_id" type="text" name="job_id" required="required"/>
+            </div>
 
-          <!-- Job Title -->
-          <div style="flex: 1 1 45%;">
-            <label for="job_title">Job Title <span style="color: red;">*</span></label><br/>
-            <input id="job_title" type="text" name="job_title" required="required" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="job_title">Job Title <span class="required">*</span></label>
+              <input id="job_title" type="text" name="job_title" required="required"/>
+            </div>
 
-          <!-- Experience -->
-          <div style="flex: 1 1 45%;">
-            <label for="experience">Experience</label><br/>
-            <input id="experience" type="text" name="experience" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="experience">Experience</label>
+              <input id="experience" type="text" name="experience"/>
+            </div>
 
-          <!-- Shift -->
-          <div style="flex: 1 1 45%;">
-            <label for="shift">Shift</label><br/>
-            <input id="shift" type="text" name="shift" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="shift">Shift</label>
+              <input id="shift" type="text" name="shift"/>
+            </div>
 
-          <!-- Company -->
-          <div style="flex: 1 1 45%;">
-            <label for="company">Company</label><br/>
-            <input id="company" type="text" name="company" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input id="company" type="text" name="company"/>
+            </div>
 
-          <!-- Location -->
-          <div style="flex: 1 1 45%;">
-            <label for="location">Location</label><br/>
-            <input id="location" type="text" name="location" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input id="location" type="text" name="location"/>
+            </div>
 
-          <!-- Salary -->
-          <div style="flex: 1 1 45%;">
-            <label for="salary">Salary</label><br/>
-            <input id="salary" type="text" name="salary" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="salary">Salary</label>
+              <input id="salary" type="text" name="salary"/>
+            </div>
 
-          <!-- Skills -->
-          <div style="flex: 1 1 45%;">
-            <label for="skills">Skills</label><br/>
-            <input id="skills" type="text" name="skills" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="skills">Skills</label>
+              <input id="skills" type="text" name="skills"/>
+            </div>
 
-          <!-- Status -->
-          <div style="flex: 1 1 45%;">
-            <label for="status">Status</label><br/>
-            <select id="status" name="status" style="width: 100%;">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status" name="status">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
 
-          <!-- Workplace Type -->
-          <div style="flex: 1 1 45%;">
-            <label for="workplace_type">Workplace Type</label><br/>
-            <select id="workplace_type" name="workplace_type" style="width: 100%;">
-              <option value="onsite">On‑site</option>
-              <option value="remote">Remote</option>
-              <option value="hybrid">Hybrid</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="workplace_type">Workplace Type</label>
+              <select id="workplace_type" name="workplace_type">
+                <option value="onsite">On‑site</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+              </select>
+            </div>
 
-          <!-- Posted Date -->
-          <div style="flex: 1 1 45%;">
-            <label for="posted_date">Posted Date</label><br/>
-            <input id="posted_date" type="date" name="posted_date" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="posted_date">Posted Date</label>
+              <input id="posted_date" type="date" name="posted_date"/>
+            </div>
 
-          <!-- Joining Tentative Date -->
-          <div style="flex: 1 1 45%;">
-            <label for="joining_tentative_date">Joining Date</label><br/>
-            <input id="joining_tentative_date" type="date" name="joining_tentative_date" style="width: 100%;"/>
-          </div>
+            <div class="form-group">
+              <label for="joining_tentative_date">Joining Date</label>
+              <input id="joining_tentative_date" type="date" name="joining_tentative_date"/>
+            </div>
 
-          <!-- Responsibilities -->
-          <div style="flex: 1 1 100%;">
-            <label for="responsibilities">Responsibilities</label><br/>
-            <textarea id="responsibilities" name="responsibilities" rows="3" style="width: 100%;"></textarea>
-          </div>
+            <div class="form-group full-width">
+              <label for="responsibilities">Responsibilities</label>
+              <textarea id="responsibilities" name="responsibilities" rows="3"></textarea>
+            </div>
 
-          <!-- Requirements -->
-          <div style="flex: 1 1 100%;">
-            <label for="requirement">Requirements</label><br/>
-            <textarea id="requirement" name="requirement" rows="3" style="width: 100%;"></textarea>
-          </div>
+            <div class="form-group full-width">
+              <label for="requirement">Requirements</label>
+              <textarea id="requirement" name="requirement" rows="3"></textarea>
+            </div>
 
-          <!-- Submit Button -->
-          <div style="flex: 1 1 100%; text-align: center; margin-top: 20px;">
-            <button type="submit" style="padding: 10px 30px; background-color: green; color: white; border: none; cursor: pointer;">
-              Submit Job
-            </button>
+            <div class="form-submit full-width">
+              <button type="submit">Submit Job</button>
+            </div>
           </div>
         </form>
       </div>
@@ -111,33 +97,23 @@
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           const form = document.getElementById('jobForm');
-
           form.addEventListener('submit', async function (e) {
             e.preventDefault();
-
             const formData = new FormData(form);
             const data = {};
-
-            formData.forEach((value, key) => {
-              data[key] = value;
-            });
-
+            formData.forEach((value, key) => data[key] = value);
             try {
               const response = await fetch("/api/jobs", {
                 method: "POST",
-                headers: {
-                  "Content-Type": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
               });
-
               const result = await response.json();
-              console.log(result);
               if (result.result.status === 201) {
                 alert("✅ Job Posted successfully!");
                 form.reset();
               } else {
-               alert("❌ Request failed: " + error.message);
+                alert("❌ Request failed");
               }
             } catch (error) {
               alert("❌ Request failed: " + error.message);
@@ -148,4 +124,3 @@
     </t>
   </template>
 </odoo>
-
