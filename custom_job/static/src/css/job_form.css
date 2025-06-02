@@ -23,9 +23,13 @@
   flex-direction: column;
 }
 
-.form-group.full-width {
-  flex: 1 1 100%;
+.form-submit.full-width {
+  grid-column: span 2; /* Make sure it spans the full row in the grid */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  margin-top: 20px;
 }
+
 
 /* Labels */
 .form-group label {
