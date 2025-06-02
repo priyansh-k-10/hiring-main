@@ -1,8 +1,8 @@
 <odoo>
   <template id="job_page_template" name="Job Page">
     <t t-call="website.layout">
-    <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_template.css'"/>
-      <link rel="stylesheet" t-att-href="job_stylesheet"/>
+    <t t-set="job_stylesheets" t-value="'/custom_job/static/src/css/job_template.css'"/>
+      <link rel="stylesheet" t-att-href="job_stylesheets"/>
 
         <h1 class="mb-4">Available Job Postings</h1>
 
