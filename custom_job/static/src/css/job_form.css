@@ -60,7 +60,7 @@
 
 /* Submit Button */
 .form-submit {
-  text-align: right;
+   justify-self: end;
   margin-top: 20px;
 }
 
