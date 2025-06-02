@@ -1,7 +1,7 @@
 
 
 <odoo>
-  <template id="job_form_template" name="Job Form">
+  <template id="job_form_template" name="Job Form" class="jobfromchange">
     <t t-call="website.layout">
     <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_form.css'"/>
       <link rel="stylesheet" t-att-href="job_stylesheet"/>
