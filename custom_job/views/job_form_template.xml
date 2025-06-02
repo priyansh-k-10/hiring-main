@@ -3,8 +3,8 @@
 <odoo>
   <template id="job_form_template" name="Job Form">
     <t t-call="website.layout">
-    <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_template.css'"/>
-      <link rel="stylesheet" t-att-href="/create-job"/>
+    <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_form.css'"/>
+      <link rel="stylesheet" t-att-href="job_stylesheet"/>
       <div class="container mb-5">
         <h2 class="mb-4 text-center">Create a Job</h2>
         <form id="jobForm" style="display: flex; flex-wrap: wrap; gap: 20px;">
