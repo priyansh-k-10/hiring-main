@@ -1,4 +1,80 @@
 
-.my-custom-table-wrapper{
-  background-color: red;
+.my-custom-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  max-height: 400px;  
+  overflow-y: auto;
+  margin-bottom: 3rem;
+}
+
+.my-custom-table {
+  width: max-content;
+  border-collapse: collapse;
+  background-color: #a0e9fd;
+  color: #343a40;
+  font-size: 1rem;
+  border-radius: 10px;
+  word-wrap: break-word;
+
+  th {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-right: 1px solid #dee2e6;
+  }
+
+  td {
+    padding: 0.75rem;
+    border-bottom: 2px solid #336699;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+  }
+
+  td.Responsibilities {
+  max-width: 200px;  /* You can adjust this width */
+  white-space: normal;  /* Allows text to wrap */
+  word-break: break-word;  /* Break long words */
+  overflow-wrap: break-word;
+  text-align: left;  /* Optional: aligns text neatly */
+}
+
+
+  @media (max-width: 1000px) {
+    thead {
+      display: none;
+    }
+
+    &,
+    tbody,
+    tr,
+    td {
+      display: block;
+      width: 100%;
+    }
+
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    td::before {
+      position: absolute;
+      top: 0.75rem;
+      white-space: nowrap;
+      font-weight: bold;
+      color: #003366;
+    }
+  }
 }
