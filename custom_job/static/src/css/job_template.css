@@ -48,10 +48,6 @@
   text-align: left;  /* Optional: aligns text neatly */
 }
 
-  tr:nth-child(even) {
-    background-color: #f9fbfd;
-  }
-
 
   @media (max-width: 1000px) {
     thead {
