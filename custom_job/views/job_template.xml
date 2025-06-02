@@ -7,7 +7,7 @@
         <h1 class="mb-4">Available Job Postings</h1>
 
         <!-- Create Job Button -->
-      <div class="mb-3" style="text-align: right; padding-right: 80px; padding-top: 20px;">
+      <div class="mb-3" style="text-align: right; padding-right: 90px; padding-top: 20px;">
         <a href="/create-job" class="btn btn-primary">+ Create Job</a>
       </div>
 
