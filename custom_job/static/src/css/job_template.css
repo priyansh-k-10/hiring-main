@@ -47,6 +47,9 @@
   overflow-wrap: break-word;
   text-align: left;  /* Optional: aligns text neatly */
 }
+  td:nth(even){
+    background-color: #03f1f9;
+  }
 
 
   @media (max-width: 1000px) {
