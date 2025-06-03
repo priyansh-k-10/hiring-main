@@ -97,7 +97,7 @@
               <textarea id="requirement" name="requirement" rows="3"></textarea>
             </div>
 
-          <div style="display: flex; justify-content: flex-end;">
+<div style="width: 100%; display: flex; justify-content: flex-end; padding: 1rem 0;">
   <button type="submit">Submit Job</button>
 </div>
 
