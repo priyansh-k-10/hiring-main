@@ -5,7 +5,7 @@
       <t t-set="job_stylesheet" t-value="'/custom_job/static/src/css/job_form.css'" />
       <link rel="stylesheet" t-att-href="job_stylesheet"/>
 
-      <div class="container mb-5 job-form-container d-flex justify-content-end">
+      <div class="container mb-5 job-form-container">
         <h2 >Create a Job</h2>
         <form id="jobForm">
           <!-- Basic Info -->
