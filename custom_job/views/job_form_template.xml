@@ -98,7 +98,7 @@
             </div>
 
             <div>
-              <button type="submit", style= "background-color:'green'">Submit Job</button>
+              <button type="submit", style= "background-color:'green'";>Submit Job</button>
             </div>
 
           </div>
