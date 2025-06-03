@@ -11,6 +11,7 @@
 
 .create-job{
     font-family: 'Titillium Web';
+    text-align: center;
 }
 
 /* Form Grid */
@@ -88,6 +89,6 @@
 }
 
 .submitbtn{
-    align-items: right;
-
+    justify-self: end;
+    text-align: right;
 }
