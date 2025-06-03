@@ -97,9 +97,10 @@
               <textarea id="requirement" name="requirement" rows="3"></textarea>
             </div>
 
-            <div >
-              <button type="submit" style="justify-content:end">Submit Job</button>
-            </div>
+          <div style="display: flex; justify-content: flex-end;">
+  <button type="submit">Submit Job</button>
+</div>
+
           </div>
         </form>
       </div>
