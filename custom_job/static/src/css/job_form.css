@@ -67,14 +67,14 @@
   color: red;
 }
 
-/* Submit Button */
+ /*Submit Button*\
 .form-submit {
-  display: flex;            /* Enable flex layout */
-  justify-content: flex-end; /* Align content (button) to the right */
+  display: flex;            /* Enable flex layout 
+  justify-content: flex-end; /* Align content (button) to the right 
   margin-top: 20px;
-}
+}*\
 
-.form-submit button {
+/*.form-submit button {
   background-color: #2ecf53;
   color: white;
   padding: 12px 30px;
@@ -85,10 +85,13 @@
   transition: background-color 0.3s ease;
 }
 
-.form-submit button:hover {
+/*.form-submit button:hover {
   background-color: #218838;
-}
+} */
 
 .submitbtn{
-    right: 40%;
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-end;
+    padding: 1rem 0;
 }
