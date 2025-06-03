@@ -3,7 +3,7 @@
   max-width: 1000px;
   margin: 15px auto;
   padding: 30px 20px;
-  background-color: #fff;
+  background-color: #f5f5f5;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   font-family: 'Titillium Web';
@@ -52,7 +52,7 @@
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
-  transition: border-color 0.3s;
+  transition: border-color 0.5s;
 }
 
 .form-group input:focus,
@@ -75,7 +75,7 @@
 }
 
 .form-submit button {
-  background-color: #28a745;
+  background-color: #2ecf53;
   color: white;
   padding: 12px 30px;
   font-size: 16px;
@@ -89,3 +89,11 @@
   background-color: #218838;
 }
 
+.submitbtn{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-100%);
+  transform: translateY(-425%);
+  transform: translatex(425%);
+}
