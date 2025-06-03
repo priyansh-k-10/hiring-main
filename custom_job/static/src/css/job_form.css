@@ -64,7 +64,7 @@
 
 /* Submit Button */
 .form-submit {
-   justify-self: end;
+  justify-self: end;
   margin-top: 20px;
 }
 
@@ -81,4 +81,9 @@
 
 .form-submit button:hover {
   background-color: #218838;
+}
+
+.submitbtn{
+    align-items: right;
+    
 }
