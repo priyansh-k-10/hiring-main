@@ -9,6 +9,10 @@
   font-family: 'Titillium Web';
 }
 
+.mb-4 text-center{
+    font-family: 'Titillium Web';
+}
+
 /* Form Grid */
 .form-grid {
   display: flex;
@@ -85,5 +89,5 @@
 
 .submitbtn{
     align-items: right;
-    
+
 }
