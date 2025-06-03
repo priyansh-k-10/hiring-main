@@ -89,11 +89,4 @@
   background-color: #218838;
 }
 
-.submitbtn{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-100%);
-  transform: translateY(-425%);
-  transform: translatex(425%);
-}
+
