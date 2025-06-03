@@ -69,7 +69,8 @@
 
 /* Submit Button */
 .form-submit {
-  justify-self: end;
+  display: flex;            /* Enable flex layout */
+  justify-content: flex-end; /* Align content (button) to the right */
   margin-top: 20px;
 }
 
@@ -88,7 +89,3 @@
   background-color: #218838;
 }
 
-.submitbtn{
-    justify-self: end;
-    text-align: right;
-}
