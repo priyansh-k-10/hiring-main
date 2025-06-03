@@ -98,7 +98,7 @@
             </div>
 
             <div>
-              <button type="submit", class="submitbtn">Submit Job</button>
+              <button type="submit", class="submit">Submit Job</button>
             </div>
 
           </div>
