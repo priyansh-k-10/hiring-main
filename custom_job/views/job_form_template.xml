@@ -97,7 +97,7 @@
               <textarea id="requirement" name="requirement" rows="3"></textarea>
             </div>
 
-            <div>
+            <div class="submit">
               <button type="submit" class="btnsubmit">Submit Job</button>
             </div>
 
