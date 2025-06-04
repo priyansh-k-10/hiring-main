@@ -89,13 +89,13 @@
   background-color: #218838;
 } */
 
-.submit{
+/* .submit{
     width: 100%; 
     display: flex;
     background-color: #2ecf53;
     justify-content: flex-end;
     padding: 1rem 0;
-}
+} */
 
 .btnsubmit{
     background-color: red;
