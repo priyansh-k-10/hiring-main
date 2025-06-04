@@ -104,3 +104,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.btnsubmit:hover {
+  background-color: #3ca60be2; /* darker + semi-transparent */
+}
